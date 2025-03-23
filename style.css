@@ -1,0 +1,262 @@
+/* bootstrap css */
+@import url("bootstrap.min.css");
+
+/* font awesome */
+@import url("all.css");
+
+/* main css */
+:root {
+    --primaryColor: #6a5acd;
+    --secondaryColor: #a020f0;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --darkGrey: #afafaf;
+    --mainTransition: all 0.3s linear;
+    --bodyFont: 'Roboto', sans-serif;
+    --slantedFont: 'Courgette', cursive;
+}
+
+body {
+    background: var(--offWhite);
+    font-family: var(--bodyFont);
+    color: var(--mainBlack);
+}
+
+.banner {
+    min-height: calc(100vh - 56px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/hero-bcg.jpeg') center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainWhite);
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-family: var(--slantedFont);
+    color: var(--primaryColor);
+}
+
+.banner-link {
+    padding: 1rem 3rem;
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    border: 3px solid var(--primaryColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    transition: var(--mainTransition);
+}
+
+.banner-link:hover {
+    background: transparent;
+    color: var(--primaryColor);
+}
+
+.max-height {
+    min-height: 100vh;
+}
+
+/* about */
+.about-img__container {
+    background: var(--primaryColor);
+    border-radius: 0.5rem;
+}
+
+.about-img {
+    border-radius: 0.5rem;
+}
+
+/* store */
+.store {
+    background: var(--offWhite);
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0.5rem 0;
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+}
+
+.search-box {
+    background: var(--primaryColor) !important;
+    color: var(--mainWhite) !important;
+    border: none !important;
+}
+
+#search-item {
+    border-color: var(--primaryColor);
+}
+
+.store-item {
+    overflow: hidden;
+}
+
+.store-img {
+    transition: var(--mainTransition);
+}
+
+.store-item:hover .store-img {
+    transform: scale(1.2);
+}
+
+.store-item-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--primaryColor);
+    opacity: 0;
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container:hover .store-item-icon {
+    opacity: 1;
+}
+
+/* cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 100%;
+    background: var(--mainGrey);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: var(--mainTransition);
+    overflow-y: scroll;
+    padding: 2rem;
+}
+
+.show-cart {
+    transform: translateX(0);
+}
+
+.cart-item-remove {
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+.cart-total-container {
+    margin-top: 3rem;
+}
+
+.btn-black {
+    background: transparent;
+    color: var(--mainBlack);
+    border: 1px solid var(--mainBlack);
+    transition: var(--mainTransition);
+}
+
+.btn-black:hover {
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+}
+
+.btn-pink {
+    background: var(--secondaryColor);
+    color: var(--mainWhite);
+    border: 1px solid var(--secondaryColor);
+    transition: var(--mainTransition);
+}
+
+.btn-pink:hover {
+    background: transparent;
+    color: var(--secondaryColor);
+}
+
+/* lightbox */
+.lightbox-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox-holder {
+    background: var(--mainWhite);
+    border-radius: 0.5rem;
+    width: 90vw;
+    height: 70vh;
+    position: relative;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--mainBlack);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.lightbox-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/sweets-1.jpeg') center/contain no-repeat;
+    border-radius: 0.5rem;
+}
+
+.lightbox-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--mainBlack);
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.lightbox-control:hover {
+    color: var(--primaryColor);
+}
+
+.btnLeft {
+    left: 1rem;
+}
+
+.btnRight {
+    right: 1rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Cart Project</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg px-4">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav mx-auto text-capitalize">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">store</a>
+                    </li>
+                </ul>
+                <div class="nav-info-items d-none d-lg-flex ">
+                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                        <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+                        <p class="mb-0">+ 123 456 789</p>
+                    </div>
+                    <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                        <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - <span class="item-total">0</span></p>
+                    </div>
+                    </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+                <div class="col-10 mx-auto banner text-center">
+                    <h1 class="text-capitalize">welcome to <strong class="banner-title ">grandma bake's</strong></h1>
+                    <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
+                </div>
+                <div id="cart" class="cart">
+                    <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                        <img src="img-cart/cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+                        <div class="item-text">
+
+                            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+                            <span>₹</span>
+                            <span id="cart-item-price" class="cart-item-price" class="mb-0">400</span>
+                        </div>
+                        <a href="#" id='cart-item-remove' class="cart-item-remove">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>
+                    <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                        <img src="img-cart/doughnut-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+                        <div class="cart-item-text">
+
+                            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+                            <span>₹</span>
+                            <span id="cart-item-price" class="cart-item-price" class="mb-0">600</span>
+                        </div>
+                        <a href="#" id='cart-item-remove' class="cart-item-remove">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>
+                    <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+                        <h5>total</h5>
+                        <h5> ₹<strong id="cart-total" class="font-weight-bold">1000</strong> </h5>
+                    </div>
+                    <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                        <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+                        <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+        </header>
+    <section class="about py-5" id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-10 mx-auto col-md-6 my-5">
+                    <h1 class="text-capitalize">about <strong class="banner-title ">us</strong></h1>
+                    <p class="my-4 text-muted w-75">When you send a cake, we know you aren’t just sending dessert. You are sending a moment of celebration, joy, healing and togetherness. When you can’t be there to celebrate in person, We Take The Cake makes it easy to delight your family, friends and colleagues with our freshly baked desserts delivered right to their doorstep ready to enjoy. Our experienced bakers mix all of our batters and frostings by hand, just like grandma used to make. We always bake with whole buttermilk, fresh eggs and real butter – never a cake mix or commercially made frostings.
+                        We understand that elegant presentation matters as much as the taste, and our team of very talented cake artisans take the time to decorate every cake by hand. Our shipping team then carefully packages your cake in our custom designed decorative boxes and sends them off to you. We Take The Cake goes the extra mile to make sure our mail order desserts deliver an experience that makes you proud that you chose us to create the gift people will talk about long after the celebration is over.</p>
+                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+
+                </div>
+                <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+                    <div class="about-img__container">
+                        <img src="img
